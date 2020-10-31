@@ -51,6 +51,32 @@ body {
     min-height: 10px;
     border-radius: 5px;
 }
+#videos {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    display: none;
+}
+
+.video {
+    margin: 3%;
+    padding: 1%;
+    width: 18%;
+    position: relative;
+    border: 15px solid #2e2d2d;
+}
+
+.red {
+    border-color: #EE0000 !important;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.green {
+    border-color: green;
+}
 /* responsive, form small screens, use 13px font size */
 @media (max-width: 479px) {
     body {
