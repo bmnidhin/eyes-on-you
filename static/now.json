@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+    "routes": [
+        {
+          "src": "/",
+          "dest": "/index.js",
+          "methods": ["GET"]
+        },
+        {
+            "src": "/reload",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          },
+          {
+            "src": "/joinroom",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          },
+          {
+            "src": "/createroom",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          },
+          {
+            "src": "/getroom",
+            "dest": "/index.js",
+            "methods": ["POST"]
+          }
+       
+       
+      ]
+      
+  }
