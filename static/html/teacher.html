@@ -1,17 +1,42 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../css/style.css"> 
+
+    <title>Hello, world!</title>
 </head>
+
 
 <body>
     <div class="dataenter">
-    <div class="mx-auto row form-group">
-        <div class="col text-center" style="width: 30%;">
-            <label for="room" class="col-form-label navbar-brand">Room Number</label>
+        <div class="banner">
+            <div class="banner-text text-center">
+                <h1>Start an Exam Now</h1>
+            </div>
+         </div>
+         <div class="info-text text-center">
+            <h3>Create a New Exam Room</h3>
+          </div>
+          <div class="mt-3 calender width-30">
+            <h6>21/10/2020</h6>
+            <h5>Liner Algebra and complex analysis</h5>
         </div>
+    <div class="mx-auto row form-group">
+        
+        
 
-        <div class="col" style="width: 70%;">
+        <div class="center width-30 mt-4"style='margin: auto;'>
 
             <input type="number" class="form-control" id="roomnum"></input>
         </div>
@@ -45,8 +70,9 @@
     <script src="../js/face-api.min.js"></script>
     <script src="../js/resemble.js"></script>
     <script>
-        faceapi.loadFaceRecognitionModel('/models')
+        faceapi.loadFaceRecognitionModel('../models')
 
+        var node ='http://localhost:5000';
 
         var webCams = [];
         async function loadCams() {
@@ -199,7 +225,7 @@
             })
             sconnection.onicecandidate = function () {
 
-                $.post("/createroom", {
+                $.post(node +"/createroom", {
                     room: room,
                     key: sconnection.localDescription.sdp
                 }, function (data) {
@@ -226,7 +252,7 @@
             setInterval(function () {
 
 
-                $.post("/reload", {
+                $.post(node + "/reload", {
                     room: room,
                 }, function (users) {
 
