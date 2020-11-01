@@ -86,7 +86,61 @@ body {
     border: 7px solid #2e2d2d;
     width: 50%;
 }
-
+body {
+    font-family: arial;
+}
+button {
+    padding:10px;
+    background-color:#6a67ce;
+    color: #FFFFFF;
+    border: 0px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+#output {
+    background-color:#F9F9F9;
+    padding:10px;
+    width: 100%;
+    margin-top:20px;
+    line-height:30px;
+}
+.hide {
+    display:none;
+}
+.mycenter {
+    display:block;
+    margin: auto;
+    text-align: center;
+}
+.rounded-fab{
+    display:inline-block;
+    margin:auto;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 58px !important;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    cursor: pointer;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;}
+.activate-red{
+    color:red;
+}
+.show {
+    display:block;
+}
 .red {
     border-color: #EE0000 !important;
 }
