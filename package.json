@@ -4,12 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "npm test",
+    "start": "nodemon server"
   },
   "author": "",
   "license": "GPL",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.4",
+    "body-parser":"^1.19.0"
   }
 }
