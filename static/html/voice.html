@@ -54,8 +54,8 @@
                 recognition.onresult = function(event) {
                     var transcript = event.results[0][0].transcript;
 					output.innerHTML = "<b>Text:</b> " + transcript;
-					if(transcript=="Show me ongoing exams")
-					{output.innerHTML= "<b>:Exam </b> " + "<br/><b>EC301:Digital Signal Processing </b> "+"<br/><b>ME201:Mechanics of Fluids </b>"};
+					if(transcript=="show me ongoing exams")
+					{output.innerHTML= "<b>Active Rooms </b> " + "<br/><b>EC301:Digital Signal Processing - Room: 15</b> "+"<br/><b>ME201:Mechanics of Fluids - Room: 25 </b>"};
                     output.classList.remove("hide");
                 };
                  recognition.start();

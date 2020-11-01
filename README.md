@@ -1,5 +1,4 @@
-# online-exam
-
+# Eyes On You - Online Proctoring Tool
 ### Install node modules
 ```
 npm install
@@ -8,4 +7,4 @@ npm install
 ```
 nodemon server
 ```
-Server will start at http://localhost:5000/
+Server will start at http://localhost:8080/
