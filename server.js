@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 5000;
+const port = 8080;
 
 let html = "<h1>Make a Ton</h1>"
 var rooms=[];
@@ -41,6 +41,6 @@ app.post("/getroom", function(req, res) {
 
 // Listen on port 5000
 app.listen(port, () => {
-  console.log(`Server is booming on port 5000
-Visit http://localhost:5000`);
+  console.log(`Server is booming on port 8080
+Visit http://localhost:8080`);
 });

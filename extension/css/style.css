@@ -1,0 +1,89 @@
+/* for all screens, use 14px font size */
+body {  
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.main-page{min-height: 100vh;min-width: 50vh;}
+/*.main-one{
+    background: url(../images/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    
+}*/
+.exam-one{
+    /* background: url(../images/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height:100vh;
+    
+}
+.overlay{
+    background-color:rgba(22, 12, 33,0.6);
+    height: 100vh;
+    width:102%;
+    background-size: cover;
+    color:white;
+}
+.logo-area{
+    padding: 30px;
+}
+.hero{
+    margin: auto;
+    padding-top: 20%;
+
+    font-size: 6em;
+}
+.home-actions{
+    margin: auto;
+    width:75%;
+    margin-top: 30%;
+}
+.exam-actions{
+    margin: auto;
+    width:75%;
+    margin-top: 10%;
+}
+.calender{
+    background-color: rgba(12, 12, 12, 0.1);
+    padding: 10px;
+    min-height: 10px;
+    border-radius: 5px;
+}
+#videos {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    display: none;
+}
+
+.video {
+    margin: 3%;
+    padding: 1%;
+    width: 18%;
+    position: relative;
+    border: 15px solid #2e2d2d;
+}
+
+.red {
+    border-color: #EE0000 !important;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.green {
+    border-color: green;
+}
+/* responsive, form small screens, use 13px font size */
+@media (max-width: 479px) {
+    body {
+        font-size: 13px;
+    }
+    .home-actions{
+        
+        margin-top: 5%;
+    }
+}
